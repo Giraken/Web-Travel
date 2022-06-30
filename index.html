@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <!-- Popper.JS -->
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+</head>
+<body>
+
+<!-- Navbar -->
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#home"><b>Tour Destination</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#most-visited">Most Visited</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#best-hidden">Hidden Place</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#our-town">Special</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#my-gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        My Gallery
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Gallery</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Our Review</a></li>
+                      </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Contents -->
+
+<div class="hero1 d-flex flex-column justify-content-center p-5 align-items-center text-center overflow-hidden gap-5" id="home">
+    <h1 class="hero1-title-1 text-center text-white fw-bold overflow-hidden w-75 mt-5">
+        Welcome to the uncharted
+    </h1>
+    <h4 class="hero1-title-2 text-white overflow-hidden w-50">
+        Let's go on an adventure
+    </h4>
+</div>
+
+<div class="container" id="most-visited">
+    <h2>Witness</h2>
+    <h4>Most Visited</h4>
+    <div class="box-container">
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <div class="image">
+                <img src="img/nusa-dua.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Nusa Dua</h3>
+                <h3>(Bali)</h3>
+                <p>Pantai yang memiliki pasir putih yang lembut dan air laut yang berwarna biru jernih.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_nusadua').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="image">
+                <img src="img/bunaken.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Taman Laut Bunaken</h3>
+                <h3>(Sulawesi Utara)</h3>
+                <p>Objek wisata dengan keindahan taman bawah lautnya yang sulit ditemukan di negara lain.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_bunaken').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <div class="image">
+                <img src="img/bromo.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Gunung Bromo</h3>
+                <h3>(Jawa Timur)</h3>
+                <p>Gunung berapi yang masih aktif, memiliki pesona khas berupa gurun pasir yang sangat luas. </p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_bromo').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <div class="image">
+                <img src="img/raja-ampat.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Kepulauan Raja Ampat</h3>
+                <h3>(Papua Barat)</h3>
+                <p>Terdapat sekitar 75% spesies laut dunia yang tinggal di pulau indah nan menakjubkan ini.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_rajaampat').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="image">
+                <img src="img/pulau-komodo.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Pulau Komodo</h3>
+                <h3>(Nusa Tenggara Timur)</h3>
+                <p>Pulau ini merupakan rumah bagi ratusan Komodo, hewan endemik yang hanya ada di Indonesia.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_komodo').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="450">
+            <div class="image">
+                <img src="img/borobudur.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Candi Borobudur</h3>
+                <h3>(Jawa Tengah)</h3>
+                <p>Candi Budha terbesar di dunia, warisan budaya dan sejarah Indonesia dengan arsitektur yang memukau.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_borobudur').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="150">
+            <div class="image">
+                <img src="img/kawah-ijen.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Kawah Ijen</h3>
+                <h3>(Jawa Timur)</h3>
+                <p>Pesona api biru yang menyala, pengalaman mendaki, dan beberapa foto panorama alam yang tiada duanya.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_ijen').style.display='block'">more</button>
+            </div>
+        </div>
+
+        <div class="box" data-aos="zoom-in-up" data-aos-delay="300">
+            <div class="image">
+                <img src="img/gili-trawangan.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Gili Trawangan</h3>
+                <h3>(Nusa Tenggara Barat)</h3>
+                <p>Pantai dengan kombinasi langit biru, semburat awan putih, jernihnya air laut dibingkai pasir putih.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('modal_trawangan').style.display='block'">more</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div id="modal_nusadua" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_nusadua').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/nusa-dua.jpg" class="main-img">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Nusa Dua</h1>
+                    <h1>(Bali)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="deskripsi-tab" data-bs-toggle="tab" data-bs-target="#Deskripsi" type="button" role="tab" aria-controls="deskripsi" aria-selected="true"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="gambar-tab" data-bs-toggle="tab" data-bs-target="#Gambar" type="button" role="tab" aria-controls="gambar" aria-selected="false"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="Deskripsi" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Pulau Seribu Dewa satu ini memang tidak perlu diragukan lagi terkait keindahan dan pesonanya dalam memikat para wisatawan dalam 
+                                negeri maupun mancanegara. Di Bali, ada satu tempat wisata yang begitu cantik, yakni Nusa Dua. Objek wisata pantai ini memiliki 
+                                pasir putih yang lembut dan air laut yang berwarna biru jernih. Kamu akan dimanjakan dengan berbagai fasilitas saat berkunjung 
+                                ke tempat satu ini. Mulai dari penginapan dan resort yang berkelas, restoran, pusat perbelanjaan, hingga aktivitas berselancar 
+                                di pantainya.
+                                <br><br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Nusa_Dua">https://id.wikipedia.org/wiki/Nusa_Dua</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="Gambar" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/nusa1.jpg" alt="">
+                            <img src="img/nusa2.png" alt="">
+                            <img src="img/nusa3.jpg" alt="">
+                            <img src="img/nusa4.jpg" alt="">
+                            <img src="img/nusa5.png" alt="">
+                            <img src="img/nusa6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15771.390157061618!2d115.22725713610522!3d-8.800390643733929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd242d6feba16fd%3A0x84a7328be1e50953!2sNusa%20Dua%20Beach!5e0!3m2!1sid!2sid!4v1654187122976!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_bunaken" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_bunaken').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/bunaken.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Taman Laut Bunaken</h1>
+                    <h1>(Sulawesi Utara)</h1>
+                </div>  
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p2tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p2tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p2tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Bunaken menjadi salah satu objek wisata di Indonesia yang mengundang decak kagum karena keindahan taman bawah lautnya yang 
+                                sulit ditemukan di negara lain. Berkunjung ke Taman Laut Bunaken, wisatawan dapat menemukan keindahan kehidupan di dalam laut 
+                                yang membuat mata kamu tidak bisa berhenti memandangnya. Di dalam taman laut ini terdapat 13 jenis terumbu karang yang
+                                didominasi dengan bebatuan laut.<br> <br>
+                                    
+                                Selain itu, pemandangan yang paling menarik adalah adanya terumbu karang terjal vertikal yang menjulang ke bawah sedalam 
+                                25 - 50 meter. Tidak sampai di situ, mata kita akan dimanjakan dengan 91 jenis ikan yang ada di dalamnya. Tidak heran kalau 
+                                Taman Laut Bunaken menjadi salah satu destinasi bagi para wisatawan terutama para pecinta laut. Apalagi tujuan wisata 
+                                Indonesia favorit wisatawan asing ini menyediakan fasilitas untuk scuba diving dengan 20 titik penyelaman terbaik, di mana 
+                                penyelam dapat kesempatan berenang di dasar laut dengan beragam biota laut yang menakjubkan.
+                                <br><br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Taman_Nasional_Bunaken">https://id.wikipedia.org/wiki/Taman_Nasional_Bunaken</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p2tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/bunaken1.jpg" alt="">
+                            <img src="img/bunaken2.png" alt="">
+                            <img src="img/bunaken3.jpg" alt="">
+                            <img src="img/bunaken4.jpg" alt="">
+                            <img src="img/bunaken5.jpg" alt="">
+                            <img src="img/bunaken6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101290.92980496219!2d124.66644132496053!3d1.690945975840516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d7873db0880843f%3A0x606df49ef663eff7!2sTaman%20Nasional%20Bunaken!5e0!3m2!1sid!2sid!4v1654344211434!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>    
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_bromo" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_bromo').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/bromo.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Gunung Bromo</h1>
+                    <h1>(Jawa Timur)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p3tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p3tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p3tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Kalau kamu pernah berkunjung ke Jawa Timur gak lengkap rasanya kalau belum menginjakkan kaki ke Gunung Bromo ini. Salah satu 
+                                gunung berapi yang masih aktif ini memiliki pesona khas berupa gurun pasir yang sangat luat. Meskipun bukan salah satu gunung 
+                                tertinggi di Indonesia, namun keindahan Gunung Bromo tidak ada duanya dan membuat para pengunjung dapat merasakan pemandangan 
+                                yang fantastis dan spektakuler. Wisatawan dapat berkuda dan mendaki gunung bromo untuk menikmati keindahan yang menawan saat
+                                matahari terbit dan terbenam. Bisa jadi pengalaman secara langsung yang tidak terlupakan lho!. Dengan keindahan yang menakjubkan 
+                                itu tidak heran jika objek wisata di Indonesia satu ini menjadi para wisatawan mancanegara yang berkunjung ke Indonesia.
+                                <br> <br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Gunung_Bromo">https://id.wikipedia.org/wiki/Gunung_Bromo</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p3tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/bromo1.jpeg" alt="">
+                            <img src="img/bromo2.jpg" alt="">
+                            <img src="img/bromo3.jpg" alt="">
+                            <img src="img/bromo4.jpg" alt="">
+                            <img src="img/bromo5.jpg" alt="">
+                            <img src="img/bromo6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8869.200015024522!2d112.95053020249837!3d-8.021651155049355!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd63f365f69c945%3A0x36aec022815992c9!2sTaman%20Nasional%20Bromo%20Tengger%20Semeru!5e0!3m2!1sid!2sid!4v1654344566327!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_rajaampat" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_rajaampat').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/raja-ampat.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Kepulauan Raja Ampat</h1>
+                    <h1>(Papua Barat)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p4tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p4tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p4tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Surga dunia di Indonesia selanjutnya adalah kepulauan Raja Ampat yang terletak di Papua Barat dengan kekayaan laut terlengkap di 
+                                bumi. Raja Ampat atau Empat Raja merupakan 4 pulau indah yang merupakan penghasil lukisan batu kuno. Empat pulau utama yang 
+                                dimaksud adalah Waigeo, Salawati, Batanta, dan Misool. Nama-nama tersebut berasal dari mitos lokal dari warga di sekitar pulau 
+                                Raja Ampat. Keindahan dan kemegahan dari objek wisata populer asal Indonesia ini mampu mengundang para wisatawan dari seluruh 
+                                dunia untuk datang ke sini dan merasakan pengalaman sekaligus pemandangan yang tidak akan terlupakan. Dengan wilayah pulau 
+                                mencakup hingga 4,6 juta hektar tanah dan laut, kita bisa menemukan 540 jenis karang, 1.511 spesies ikan, serta 700 jenis 
+                                moluska. Perlu diketahui Toppers, menurut laporan The Nature Conservancy and Conservation International, ada sekitar 75% 
+                                spesies laut dunia yang tinggal di pulau indah nan menakjubkan ini.
+                                <br><br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Kabupaten_Raja_Ampat">https://id.wikipedia.org/wiki/Kabupaten_Raja_Ampa</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p4tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/raja-ampat1.jpg" alt="">
+                            <img src="img/raja-ampat2.jpg" alt="">
+                            <img src="img/raja-ampat3.png" alt="">
+                            <img src="img/raja-ampat4.jpg" alt="">
+                            <img src="img/raja-ampat5.jpg" alt="">
+                            <img src="img/raja-ampat6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2042457.4826121856!2d129.38367741423693!3d-1.0291008234782681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d5c3eaaccb47097%3A0x7851bd844c4cdf44!2sKabupaten%20Raja%20Ampat!5e0!3m2!1sid!2sid!4v1654344702359!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_komodo" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_komodo').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/pulau-komodo.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Pulau Komodo</h1>
+                    <h1>(Nusa Tenggara Timur)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p5tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p5tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p5tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Destinasi wisata Indonesia yang tersohor di mata dunia selanjutnya adalah Pulau Komodo. Pulau yang berlokasi di Kepulauan 
+                                Nusa Tenggara Timur ini merupakan rumah bagi ratusan Komodo, hewan endemik yang hanya ada di Indonesia. Selain bisa 
+                                mengamati perilaku dan mengeksplorasi habitat dari hewan purba ini, Pulau Komodo juga menawarkan panorama alam yang 
+                                menakjubkan. Salah satunya adalah pantai dengan pasir berwarna merah muda yang dikenal dengan nama “Pink Beach“. Pantai 
+                                seperti ini hanya terdapat tujuh di seluruh dunia sehingga menjadikannya sebagai salah satu tujuan wisata Indonesia yang 
+                                mendunia.
+                                <br><br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Pulau_Komodo">https://id.wikipedia.org/wiki/Pulau_Komodo</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p5tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/komodo1.jpg" alt="">
+                            <img src="img/komodo2.png" alt="">
+                            <img src="img/komodo3.JPG" alt="">
+                            <img src="img/komodo4.jpg" alt="">
+                            <img src="img/komodo5.jpg" alt="">
+                            <img src="img/komodo6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252484.74686060357!2d119.33254667878782!3d-8.588867654758854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2db4545ba8b2bbbb%3A0x62b9b2c3feba412!2sPulau%20Komodo!5e0!3m2!1sid!2sid!4v1654345345252!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_borobudur" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_borobudur').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/borobudur-modal.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Candi Borobudur</h1>
+                    <h1>(Jawa Tengah)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p6tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p6tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p6tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Salah satu ikon wisata budaya Indonesia yang mendunia lainnya adalah Candi Borobudur. Sebagai candi Budha terbesar di dunia 
+                                dengan luas tak kurang dari 123 X 123 meter, candi yang dibangun pada masa kerajaan Mataram kuno ini merupakan warisan budaya 
+                                dan sejarah Indonesia yang terkenal akan arsitektur yang memukau. Setiap tahunnya, tak cuma wisatawan domestik tetapi banyak 
+                                juga wisatawan asing yang tertarik untuk mengamati keindahan dari Candi Borobudur. Berbagai relief yang menceritakan mengenai 
+                                berbagai ajaran dalam agama Budha dan perjalanan hidup Sidharta Gautama hingga mencapai pencerahan sempurna bisa wisatawan
+                                temukan di tempat wisata favorit asal Indonesia. Candi Borobudur sendiri memiliki total tak kurang dari 504 arca Buddha dan 
+                                2.672 panel relief pada dinding-dindingnya. Menakjubkan sekali, bukan?
+                                <br> <br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Borobudur">https://id.wikipedia.org/wiki/Borobudur</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p6tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/borobudur1.jpeg" alt="">
+                            <img src="img/borobudur2.jpg" alt="">
+                            <img src="img/borobudur3.jpg" alt="">
+                            <img src="img/borobudur4.png" alt="">
+                            <img src="img/borobudur5.jpg" alt="">
+                            <img src="img/borobudur6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63274.38193593539!2d110.1644480860966!3d-7.613132519216292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a8cf009a7d697%3A0xdd34334744dc3cb!2sCandi%20Borobudur!5e0!3m2!1sid!2sid!4v1654443068734!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_ijen" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_ijen').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/kawah-ijen1.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                    <h1>Kawah Ijen</h1>
+                    <h1>(Jawa Timur)</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p7tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p7tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p7tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Dari Banyuwangi, terdapat pesona kawah Ijen yang baru-baru ini mulai terkenal sampai ke mancanegara. Salah satu daya 
+                                pikatnya adalah blue fire atau pesona api biru yang menyala dari kawah Gunung Ijen. Di dunia, fenomena blue fire hanya 
+                                dapat ditemukan di dua tempat yakni di Islandia dan di Indonesia.
+                                <br> <br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Gunung_Ijen">https://id.wikipedia.org/wiki/Gunung_Ijen</a>    
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p7tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/ijen1.png" alt="">
+                            <img src="img/ijen2.png" alt="">
+                            <img src="img/ijen3.jpg" alt="">
+                            <img src="img/ijen4.jpg" alt="">
+                            <img src="img/ijen5.png" alt="">
+                            <img src="img/ijen6.jpeg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10855.470236872785!2d114.23817794668358!3d-8.055486780316034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd1360879927549%3A0xa9c052cab461fff1!2sKawah%20Ijen!5e0!3m2!1sid!2sid!4v1654443189379!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modal_trawangan" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+        <span onclick="document.getElementById('modal_trawangan').style.display='none'" class="close">&times;</span>
+        <div class="row">
+            <div class="col-6 gambarisi">
+                <img src="img/gili-trawangan1.jpg" alt="">
+            </div>
+            <div class="col-12">
+                <div class="tap-header">
+                <h1>Gili Trawangan</h1>
+                <h1>Nusa Tenggara Barat</h1>
+                </div>
+                <ul class="nav nav-pills" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button href="#p8tab1" class="nav-link active" data-bs-toggle="tab"><h4>Deskripsi</h4></button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button href="#p8tab2" class="nav-link" data-bs-toggle="tab"><h4>Gambar</h4></button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="p8tab1" role="tabpanel" aria-labelledby="deskripsi-tab">
+                        <div class="container">
+                            <p>
+                                src : <br> <a target="_blank" href="https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/">https://www.tokopedia.com/blog/objek-wisata-indonesia-yang-terkenal-di-dunia-tvl/</a> <br><br>
+                                Untuk pecinta pantai, Gili Trawangan merupakan tujuan wisatawan dari seluruh dunia. Dengan kombinasi langit biru dengan 
+                                semburat awan putih, jernihnya air laut dibingkai pasir putih menjadikan Gili Trawangan sebagai tujuan wisata populer baik 
+                                bagi wisatawan dalam negeri maupun luar negeri. Selain pantai dan alam bawah laut, tempat wisata Nusantara yang berada di 
+                                Provinsi Nusa Tenggara Barat ini juga memiliki berbagai lansekap menakjubkan dan juga spot-spot foto yang instagramable, lho.
+                                <br><br> More information : <a target="_blank" href="https://id.wikipedia.org/wiki/Gili_Trawangan">https://id.wikipedia.org/wiki/Gili_Trawangan</a> 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="p8tab2" role="tabpanel" aria-labelledby="gambar-tab">
+                        <div class="galeri">
+                            <img src="img/trawangan1.jpg" alt="">
+                            <img src="img/trawangan2.jpg" alt="">
+                            <img src="img/trawangan3.jpg" alt="">
+                            <img src="img/trawangan4.png" alt="">
+                            <img src="img/trawangan5.jpg" alt="">
+                            <img src="img/trawangan6.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6" id="maps">
+                <div class="maps-heading">
+                    <h2>Check on maps :</h2>
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10538.619112236496!2d116.03459152511608!3d-8.350213412485136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dcde0ab4ff1579f%3A0xfcea7c174732d4b2!2sGili%20Trawangan!5e0!3m2!1sid!2sid!4v1654443309946!5m2!1sid!2sid" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="col-12">
+                <div id="testimonials">
+                    <div class="testimonials-heading">
+                      <h2>Check others review :</h2>
+                    </div>
+              
+                    <div class="testimonials-box-container">
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+
+                        <div class="testimonials-box">
+                            <div class="box-top">
+                
+                                <div class="profile">
+                                    <div class="profile-img">
+                                    <img src="img/borobudur.jpg" alt="">
+                                    </div>
+                                    <div class="name-user">
+                                    <strong>BABA</strong>
+                                    <span>@baba</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="review">
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star checked"></i>
+                                    <i class="fa fa-star"></i>
+                                </div>
+                            </div>
+                
+                            <div class="client-comment">
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde eum totam tempora quas illum, exercitationem molestiae! Minus ea voluptatem aliquid officiis impedit. Dolore amet eaque pariatur eum itaque autem explicabo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="best-hidden">
+    <h2>Discover</h2>
+    <h4>Best Hidden Place</h4>
+    <div class="hidden-container">
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/borobudur.jpg" alt="">
+            </div>
+            <div class="content">
+                <h4>Danau Kaco<br>
+                    <span>Kab. Kerinci, Jambi</span>
+                </h4>
+            </div>
+        </div>
+
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/raja-ampat.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>Krumutan <br>
+                <span>Riau</span>
+              </h4>
+            </div>
+        </div>
+
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/bunaken.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>This is Borobudur <br>
+                <span>On Jawa Tengah</span>
+              </h4>
+            </div>
+        </div>
+
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/borobudur.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>This is Borobudur <br>
+                <span>On Jawa Tengah</span>
+              </h4>
+            </div>
+        </div>
+
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/raja-ampat.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>This is Borobudur <br>
+                <span>On Jawa Tengah</span>
+              </h4>
+            </div>
+        </div>
+
+        <div class="hidden"> 
+            <div class="imgBx">
+              <img src="img/bunaken.jpg" alt="">
+            </div>
+            <div class="content">
+              <h4>This is Borobudur <br>
+                <span>On Jawa Tengah</span>
+              </h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="our-town">
+    <h2>Recommended</h2>
+    <h4>Best Place in our Town</h4>
+
+    <div class="slider">
+        <div class="slider-wrapper flex">
+            <div class="slide flex">
+                <div class="slide-image slider-link prev">
+                    <img src="https://goranvrban.com/codepen/img2.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
+                </div>	
+            </div>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="https://goranvrban.com/codepen/img3.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
+                </div>
+            </div>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="https://goranvrban.com/codepen/img5.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
+                </div>	
+            </div>
+            <div class="slide flex">
+                <div class="slide-image slider-link next">
+                    <img src="https://goranvrban.com/codepen/img6.jpg">
+                    <div class="overlay"></div>
+                </div>
+                <div class="slide-content">
+                    <div class="slide-title">LOREM IPSUM DOLOR SITE MATE, AD EST ABHORREANT</div>
+                    <div class="slide-text">Lorem ipsum dolor sit amet, ad est abhorreant efficiantur, vero oporteat apeirian in vel. Et appareat electram appellantur est. Ei nec duis invenire. Cu mel ipsum laoreet, per rebum omittam ex. </div>
+                    <div class="slide-more">READ MORE</div>
+                </div>
+            </div>
+      </div>
+      <div class="arrows">
+        <a href="#" title="Previous" class="arrow slider-link prev"></a>
+        <a href="#" title="Next" class="arrow slider-link next"></a>
+    </div>
+</div>
+
+<div class="container justify-content-center" id="my-gallery">
+    <h2>My Gallery</h2>
+    <h4>From Places I've Visit</h4>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
