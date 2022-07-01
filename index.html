@@ -16,6 +16,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <!-- Javascript -->
     <script src="script.js"></script>
     <!-- Popper.JS -->
@@ -356,7 +358,7 @@
         <span onclick="document.getElementById('modal_bunaken').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/bunaken.jpg" alt="">
+                <img src="img/bunaken.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -530,14 +532,13 @@
         </div>
     </div>
 </div>
-
 <div id="modal_bromo" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
         <span onclick="document.getElementById('modal_bromo').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/bromo.jpg" alt="">
+                <img src="img/bromo.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -714,7 +715,7 @@
         <span onclick="document.getElementById('modal_rajaampat').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/raja-ampat.jpg" alt="">
+                <img src="img/raja-ampat.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -893,7 +894,7 @@
         <span onclick="document.getElementById('modal_komodo').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/pulau-komodo.jpg" alt="">
+                <img src="img/pulau-komodo.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -1070,7 +1071,7 @@
         <span onclick="document.getElementById('modal_borobudur').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/borobudur-modal.jpg" alt="">
+                <img src="img/borobudur-modal.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -1248,7 +1249,7 @@
         <span onclick="document.getElementById('modal_ijen').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/kawah-ijen1.jpg" alt="">
+                <img src="img/kawah-ijen1.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -1422,7 +1423,7 @@
         <span onclick="document.getElementById('modal_trawangan').style.display='none'" class="close">&times;</span>
         <div class="row">
             <div class="col-6 gambarisi">
-                <img src="img/gili-trawangan1.jpg" alt="">
+                <img src="img/gili-trawangan1.jpg" class="main-img">
             </div>
             <div class="col-12">
                 <div class="tap-header">
@@ -1667,29 +1668,73 @@
     <h2>Recommended</h2>
     <h4>Best Place in our Town</h4>
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" width="100px">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="our-town">
+        <div class="swiper bg-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/borobudur-modal.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Autumn <span>Season</span></h2>
+                        <p>Autumn, also known as fall in North American English, is one of the four temperate
+                        seasons. Outside the tropics, autumn marks the transition from summer to winter,
+                        in September or March. Autumn is the season when the duration of daylight becomes
+                        noticeably shorter and the temperature cools considerably.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button> 
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="img/bromo.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Winter <span>Season</span></h2>
+                        <p>Winter is the coldest season of the year in polar and temperate zones. It occurs
+                        between autumn and spring.The tilt of Earth's axis causes seasons; winter occurs
+                        when a hemisphere is oriented away from the Sun. Different cultures define different
+                        dates as the start of winter, and some use a definition based on weather.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide dark-layer">
+                    <img src="img/wediombo.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Summer <span>Season</span></h2>
+                        <p>Summer is the hottest of the four temperate seasons, occurring after spring and
+                        before autumn. At or aroundthe summer solstice, the earliest sunrise and latest
+                        sunset occurs, daylight hours are longest and dark hours are shortest, with day
+                        length decreasing as the season progresses after the solstice.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/trawangan6.jpg" alt="">
+                    <div class="text-content">
+                        <h2 class="title">Spring <span>Season</span></h2>
+                        <p>Spring, also known as springtime, is one of the four temperate seasons, succeeding
+                        winter and preceding summer. There are various technical definitions of spring, but
+                        local usage of the term varies according to local climate, cultures and customs. When
+                        it is spring in the Northern Hemisphere, it is autumn in the Southern Hemisphere and
+                        vice versa.</p>
+                        <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="img/borobudur-modal.jpg" width="50%" class="d-block w-100" alt="home 1" style="height:auto">
-            </div>
-            <div class="carousel-item">
-                <img src="img/wediombo.jpg" width="50%" class="d-block w-100" alt="home 2" style="width:auto; height:auto">
-            </div>
-            <div class="carousel-item">
-                <img src="img/bromo.jpg" width="50%" class="d-block w-100" alt="home 3" style="width:auto; height:auto">
+          
+        <div class="bg-slider-thumbs">
+            <div class="swiper-wrapper thumbs-container">
+            <!-- <img src="img/borobudur-modal.jpg" class="swiper-slide" alt="">
+            <img src="img/bromo.jpg" class="swiper-slide" alt="">
+            <img src="img/wediombo.jpg" class="swiper-slide" alt="">
+            <img src="img/trawangan6.jpg" class="swiper-slide" alt=""> -->
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </button>
     </div>
 </div>
 
@@ -1698,6 +1743,7 @@
     <h4>From Places I've Visit</h4>
 </div>
 
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="script.js"></script>
