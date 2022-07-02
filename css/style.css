@@ -57,6 +57,10 @@ nav {
     font-size: 2rem;
 }
 
+.navar a{
+    text-shadow: 2px 2px 5px red;
+}
+
 .navbar a:hover {
     color: #0091ff;
 }
@@ -65,11 +69,17 @@ nav {
     color: #FFFFFF;
     width: 10px;
     font-size: 2rem;
+    text-shadow: 5px 5px 10px black;
+}
+
+.navbar-toggler{
+    background-color: #FFFFFF;
 }
 
 .nav-link {
     color: #FFFFFF;
     margin-left: 15px;
+    text-shadow: 5px 5px 10px black;
 }
 
 .dropdown-menu {
@@ -78,7 +88,7 @@ nav {
 }
 
 .dropdown-menu a:hover {
-    color: #87CEEB;
+    color: #0091ff;
     background-color: transparent;
 }
 
@@ -757,7 +767,8 @@ nav {
     border-radius: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     border-right: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: var(--box-shadow);
+    box-shadow: 1px 1px 3px black;
+    text-size-adjust: 3px 3px 5px black;;
     transform: translateX(-80px);
     opacity: 0;
 }
@@ -773,7 +784,6 @@ nav {
 .swiper-slide .text-content .read-btn{
     border: none;
     outline: none;
-    background: #015aa2;
     color: black;
     font-size: 1em;
     font-weight: 500;
@@ -788,11 +798,11 @@ nav {
 }
   
 .swiper-button-next{
-    margin-top: 100px;
+    color: #FFFFFF;
 }
   
 .swiper-button-prev{
-    
+    color: #FFFFFF;
 }
   
 .swiper-slide-active .text-content .read-btn{
@@ -847,11 +857,11 @@ nav {
     }
   
     .swiper-slide .text-content p{
-      font-size: 0.9em;
+      font-size: 1.25em;
     }
   
     .swiper-slide .text-content .read-btn{
-      font-size: 0.9em;
+      font-size: 1em;
       padding: 5px 15px;
     }
 }
