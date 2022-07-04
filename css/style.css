@@ -574,7 +574,7 @@ nav {
 
 @media only screen and (max-width: 550px) {
     .hidden {
-        width: 440px;
+        width: 100%;
         height: 300px;
     }
 }
