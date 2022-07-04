@@ -1689,7 +1689,9 @@
                     <div class="text-content">
                         <h2 style="color: black;" class="title">Pantai Kesirat <span>Jogjakarta</span></h2>
                         <p style="color: black;" >Pantai kesirat merupakan sebuah pantai unik lain, pantai ini dikelilingi dengan tebing
-                        sepanjang pantainya dengan pemandangan yang benar-benar indah. </p>
+                        sepanjang pantainya dengan pemandangan yang benar-benar indah. Di pantai ini kita memang tidak bisa berenang seperti
+                        pada pantai umumnya, namun banyak hal yang bisa dilakukan di pantai ini seperti, camping, mencari spot untuk fotografi 
+                        atau videografi, atau bahkan hanya sekedar menikmati pemandangan. </p>
                         <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
@@ -1710,8 +1712,8 @@
                     <div class="text-content">
                         <h2 style="color: black;" class="title">Pantai Gatra <span>Malang</span></h2>
                         <p style="color: black;">Sebuah pantai dengan ombak yang cenderung tenang karena berada pantai yang cenderung menjorok ke 
-                        darat. Kita dapat bermain-main air, berenang, camping, menikmati ombak yang pelan di pantai ini. 
-                        </p>
+                        darat. Kita dapat bermain-main air, berenang, camping, menikmati ombak yang pelan di pantai ini tanpa takut akan datangnya
+                        ombak dengan ketinggian yang membahayakan. </p>
                         <button class="read-btn">Read More <i class="uil uil-arrow-right"></i></button>
                     </div>
                 </div>
@@ -1732,11 +1734,52 @@
 <div class="container justify-content-center" id="my-gallery">
     <h2>My Gallery</h2>
     <h4>From Places I've Visit</h4>
+
+    <div class="wrapper">
+        <div class="items">
+            <span class="item active" data-name="all">All</span>
+            <span class="item" data-name="bromo">bromo</span>
+            <span class="item" data-name="trawangan">trawangan</span>
+            <span class="item" data-name="ijen">ijen</span>
+            <span class="item" data-name="komodo">komodo</span>
+            <span class="item" data-name="bunaken">bunaken</span>
+        </div>
+        <div class="gallery">
+          <div class="image" data-name="bromo"><span><img src="img/bromo.jpg" alt=""></span></div>
+          <div class="image" data-name="trawangan"><span><img src="img/gili-trawangan.jpg" alt=""></span></div>
+          <div class="image" data-name="ijen"><span><img src="img/kawah-ijen.jpg" alt=""></span></div>
+          <div class="image" data-name="komodo"><span><img src="img/komodo1.jpg" alt=""></span></div>
+          <div class="image" data-name="trawangan"><span><img src="img/trawangan3.jpg" alt=""></span></div>
+          <div class="image" data-name="bunaken"><span><img src="img/bunaken.jpg" alt=""></span></div>
+          <div class="image" data-name="komodo"><span><img src="img/pulau-komodo.jpg" alt=""></span></div>
+          <div class="image" data-name="ijen"><span><img src="img/ijen1.png" alt=""></span></div>
+        </div>
+    </div>
+    <div class="preview-box">
+        <div class="details">
+          <span class="title">Image Category: <p></p></span>
+          <span class="icon fas fa-times"></span>
+        </div>
+        <div class="image-box"><img src="" alt=""></div>
+    </div>
+    <div class="shadow"></div>
 </div>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
 <script src="script.js"></script>
+<script src="gambar.js"></script>
+<script type="text/javascript">
+    var nav = document.querySelector('nav');
+
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 550) {
+        nav.classList.add('bg-nav');
+      } else {
+        nav.classList.remove('bg-nav', 'shadow');
+      }
+    });
+  </script>
 </body>
 </html>
