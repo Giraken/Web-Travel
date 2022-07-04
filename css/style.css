@@ -574,7 +574,7 @@ nav {
 
 @media only screen and (max-width: 550px) {
     .hidden {
-        width: 450px;
+        width: 425px;
         height: 300px;
     }
 }
@@ -608,15 +608,17 @@ nav {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 15rem;
     padding: 10px;
     box-sizing: border-box;
 }
   
 .hidden-container .hidden .imgBx img {
-    max-width: 100%;
+    width: 100%;
     opacity: 0.1;
     transition: 0.5s;
+    -o-object-fit: cover;
+        object-fit: cover;
 }
   
 .hidden-container .hidden .imgBx img:hover {
