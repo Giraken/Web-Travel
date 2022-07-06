@@ -847,10 +847,10 @@ nav {
     .bg-slider-thumbs{
       bottom: 3em;
     }
-  }
+}
   
   /*======= Media queries (max-width: 785px) =======*/
-  @media screen and (max-width: 785px){  
+@media screen and (max-width: 785px){  
     .swiper-slide .text-content{
       margin: 0 70px 0 20px;
     }
@@ -876,23 +876,19 @@ nav {
 ::selection{
     color: #fff;
     background: #007bff;
-  }
+}
   
-  .wrapper{
-    margin: 100px auto;
-    max-width: 1100px;
-  }
-  .wrapper nav{
+  .filter .category{
     display: flex;
     justify-content: center;
   }
-  .wrapper .items{
+  .filter .items{
     display: flex;
     max-width: 720px;
     width: 100%;
     justify-content: space-between;
   }
-  .items span{
+  .items .item{
     padding: 7px 25px;
     font-size: 18px;
     font-weight: 500;
@@ -909,24 +905,62 @@ nav {
   }
   
   .gallery{
-    display: flex;
-    flex-wrap: wrap;
     margin-top: 30px;
+    -webkit-columns: 3 25rem;
+      columns: 3 25rem;
+    -webkit-column-gap: 1.5rem;
+      column-gap: 1.5rem; 
   }
   .gallery .image{
-    width: calc(100% / 4);
-    padding: 7px;
+    margin-bottom: 1rem;
+    -webkit-column-break-inside: avoid;
+            break-inside: avoid;
   }
   .gallery .image span{
     display: flex;
     width: 100%;
     overflow: hidden;
+    font-size: 1.4rem;
+    color: #aaa;
   }
   .gallery .image img{
     width: 100%;
     vertical-align: middle;
     transition: all 0.3s ease;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
   }
+  
+  .gallery .image h3 {
+    font-size: 1.5vw;
+    color: #fff;
+    text-align: left;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .items .item {
+        font-size: 12px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .items .item {
+        font-size: 18px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) {
+    .gallery .image h3{
+        font-size: 1.4vw;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .gallery .image h3 {
+        font-size: 3vw;
+    }
+  }
+  
   .gallery .image:hover img{
     transform: scale(1.1);
   }
@@ -936,6 +970,7 @@ nav {
   .gallery .image.show{
     animation: animate 0.4s ease;
   }
+  
   @keyframes animate {
     0%{
       transform: scale(0.5);
@@ -1008,34 +1043,24 @@ nav {
     display: block;
   }
   
-  @media (max-width: 1000px) {
-    .gallery .image{
-      width: calc(100% / 3);
-    }
-  }
-  @media (max-width: 800px) {
-    .gallery .image{
-      width: calc(100% / 2);
-    }
-  }
   @media (max-width: 700px) {
-    .wrapper nav .items{
+    .filter .category .items{
       max-width: 600px;
     }
-    nav .items span{
+    .category .items .item{
       padding: 7px 15px;
     }
   }
   @media (max-width: 600px) {
-    .wrapper{
+    .filter{
       margin: 30px auto;
     }
-    .wrapper nav .items{
+    .filter .category .items{
       flex-wrap: wrap;
       justify-content: center;
     }
-    nav .items span{
-      margin: 5px;
+    .category .items .item{
+      margin: 2.5px;
     }
     .gallery .image{
       width: 100%;
