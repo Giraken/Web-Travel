@@ -15,9 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <!-- Javascript -->
     <script src="script.js"></script>
     <!-- Popper.JS -->
@@ -1731,39 +1731,83 @@
     </div>
 </div>
 
-<div class="container justify-content-center" id="my-gallery">
-    <h2>My Gallery</h2>
-    <h4>From Places I've Visit</h4>
+<div class="container" id="my-gallery">
+    <h2 class="justify-content-center">My Gallery</h2>
+    <h4 class="justify-content-center">From Places I've Visit</h4>
 
-    <!-- <div class="wrapper">
-        <div class="items">
-            <span class="item active" data-name="all">All</span>
-            <span class="item" data-name="bromo">bromo</span>
-            <span class="item" data-name="trawangan">trawangan</span>
-            <span class="item" data-name="ijen">ijen</span>
-            <span class="item" data-name="komodo">komodo</span>
-            <span class="item" data-name="bunaken">bunaken</span>
+    <div class="filter">
+        <!-- filter Items -->
+        <div class="category">
+            <div class="items">
+                <span class="item active" data-name="all">All</span>
+                <span class="item" data-name="bromo">bromo</span>
+                <span class="item" data-name="trawangan">trawangan</span>
+                <span class="item" data-name="ijen">ijen</span>
+                <span class="item" data-name="komodo">komodo</span>
+                <span class="item" data-name="bunaken">bunaken</span>
+            </div>
         </div>
+        <!-- filter Images -->
         <div class="gallery">
-          <div class="image" data-name="bromo"><span><img src="img/bromo.jpg" alt=""></span></div>
-          <div class="image" data-name="trawangan"><span><img src="img/gili-trawangan.jpg" alt=""></span></div>
-          <div class="image" data-name="ijen"><span><img src="img/kawah-ijen.jpg" alt=""></span></div>
-          <div class="image" data-name="komodo"><span><img src="img/komodo1.jpg" alt=""></span></div>
-          <div class="image" data-name="trawangan"><span><img src="img/trawangan3.jpg" alt=""></span></div>
-          <div class="image" data-name="bunaken"><span><img src="img/bunaken.jpg" alt=""></span></div>
-          <div class="image" data-name="komodo"><span><img src="img/pulau-komodo.jpg" alt=""></span></div>
-          <div class="image" data-name="ijen"><span><img src="img/ijen1.png" alt=""></span></div>
+            <div class="image" data-name="bromo">
+                <img src="img/bromo.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+    
+            <div class="image" data-name="trawangan">
+                <img src="img/gili-trawangan.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="ijen">
+                <img src="img/kawah-ijen.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="komodo">
+                <img src="img/komodo1.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="trawangan">
+                <img src="img/trawangan3.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="bunaken">
+                <img src="img/bunaken.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="komodo">
+                <img src="img/pulau-komodo.jpg" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
+              
+            <div class="image" data-name="ijen">
+                <img src="img/ijen1.png" alt="">
+                <span>travel spot</span>
+                <h3>iceland</h3>
+            </div>
         </div>
     </div>
     <div class="preview-box">
         <div class="details">
-          <span class="title">Image Category: <p></p></span>
+          <span class="title">Location: <p></p></span>
           <span class="icon fas fa-times"></span>
         </div>
         <div class="image-box"><img src="" alt=""></div>
     </div>
-    <div class="shadow"></div> -->
+    <div class="shadow"></div>
 </div>
+
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
