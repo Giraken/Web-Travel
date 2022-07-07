@@ -875,117 +875,126 @@ nav {
 
 ::selection{
     color: #fff;
-    background: #007bff;
+    background: #0091ff;
 }
   
-  .filter .category{
+.filter .category{
     display: flex;
     justify-content: center;
-  }
-  .filter .items{
+}
+  
+.filter .items{
     display: flex;
     max-width: 720px;
     width: 100%;
     justify-content: space-between;
-  }
-  .items .item{
+}
+  
+.items .item{
     padding: 7px 25px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
-    color: #007bff;
+    color: #0091ff;
     border-radius: 50px;
-    border: 2px solid #007bff;
+    border: 2px solid #0091ff;
     transition: all 0.3s ease;
-  }
-  .items span.active,
-  .items span:hover{
-    color: #fff;
-    background: #007bff;
-  }
+}
   
-  .gallery{
+.items span.active,
+.items span:hover{
+    color: #fff;
+    background: #0091ff;
+  
+}
+  
+.gallery{
     margin-top: 30px;
     -webkit-columns: 3 25rem;
       columns: 3 25rem;
     -webkit-column-gap: 1.5rem;
       column-gap: 1.5rem; 
-  }
-  .gallery .image{
+}
+  
+.gallery .image{
     margin-bottom: 1rem;
     -webkit-column-break-inside: avoid;
             break-inside: avoid;
-  }
-  .gallery .image span{
+}
+
+.gallery .image span{
     display: flex;
     width: 100%;
     overflow: hidden;
     font-size: 1.4rem;
     color: #aaa;
-  }
-  .gallery .image img{
+}
+
+.gallery .image img{
     width: 100%;
     vertical-align: middle;
     transition: all 0.3s ease;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-  }
-  
-  .gallery .image h3 {
+}
+
+.gallery .image h3 {
     font-size: 1.5vw;
     color: #fff;
     text-align: left;
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .items .item {
         font-size: 12px;
     }
-  }
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .items .item {
         font-size: 18px;
     }
-  }
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .gallery .image h3{
         font-size: 1.4vw;
     }
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .gallery .image h3 {
         font-size: 3vw;
     }
-  }
+}
   
-  .gallery .image:hover img{
-    transform: scale(1.1);
-  }
-  .gallery .image.hide{
+.gallery .image:hover img{
+    transform: scale(1.05);
+}
+  
+.gallery .image.hide{
     display: none;
-  }
-  .gallery .image.show{
+}
+
+.gallery .image.show{
     animation: animate 0.4s ease;
-  }
+}
   
-  @keyframes animate {
+@keyframes animate {
     0%{
       transform: scale(0.5);
     }
     100%{
       transform: scale(1);
     }
-  }
+}
   
-  .preview-box{
+.preview-box{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.9);
-    background: #fff;
+    background-color: rgb(27, 27, 27);
     max-width: 700px;
     width: 100%;
     z-index: 5;
@@ -994,42 +1003,56 @@ nav {
     border-radius: 3px;
     padding: 0 5px 5px 5px;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
-  }
-  .preview-box.show{
+}
+  
+.preview-box.show{
     opacity: 1;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
     transition: all 0.3s ease;
-  }
-  .preview-box .details{
+}
+  
+.preview-box .details{
     padding: 13px 15px 13px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  .details .title{
+}
+
+.details .title{
     display: flex;
     font-size: 18px;
     font-weight: 400;
-  }
-  .details .title p{
+    color: #FFFFFF;
+}
+
+.details .title p{
     font-weight: 500;
     margin-left: 5px;
-  }
-  .details .icon{
-    color: #007bff;
+}
+
+.details .icon{
+    color: #0091ff;
     font-style: 22px;
     cursor: pointer;
-  }
-  .preview-box .image-box{
+}
+
+.preview-box .image-box{
     width: 100%;
     display: flex;
-  }
-  .image-box img{
+}
+
+.image-box .landscape{
     width: 100%;
     border-radius: 0 0 3px 3px;
-  }
-  .shadow{
+}
+
+.image-box-portrait .portrait{
+    width: 50%;
+    border-radius: 0 0 3px 3px;
+}
+
+.shadow{
     position: fixed;
     left: 0;
     top: 0;
@@ -1038,20 +1061,22 @@ nav {
     z-index: 2;
     display: none;
     background: rgba(0,0,0,0.4);
-  }
-  .shadow.show{
+}
+
+.shadow.show{
     display: block;
-  }
+}
   
-  @media (max-width: 700px) {
+@media (max-width: 700px) {
     .filter .category .items{
       max-width: 600px;
     }
     .category .items .item{
       padding: 7px 15px;
     }
-  }
-  @media (max-width: 600px) {
+}
+
+@media (max-width: 600px) {
     .filter{
       margin: 30px auto;
     }
@@ -1065,4 +1090,4 @@ nav {
     .gallery .image{
       width: 100%;
     }
-  }
+}
