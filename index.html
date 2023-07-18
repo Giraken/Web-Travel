@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
@@ -48,14 +49,7 @@
                     <a class="nav-link" href="#our-town">Special</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#my-gallery" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        My Gallery
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="#">Gallery</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Our Review</a></li>
-                      </ul>
+                    <a class="nav-link" href="#my-gallery">Gallery</a>
                 </li>
             </ul>
         </div>
@@ -73,6 +67,7 @@
     </h4>
 </div>
 
+<!-- Most Visit Content -->
 <div class="container" id="most-visited">
     <h2>Witness</h2>
     <h4>Most Visited Places</h4>
@@ -532,6 +527,7 @@
         </div>
     </div>
 </div>
+
 <div id="modal_bromo" class="modal">
     <!-- Modal content -->
     <div class="modal-content">
@@ -1592,6 +1588,7 @@
     </div>
 </div>
 
+<!-- Hidden Content -->
 <div class="container" id="best-hidden">
     <h2>Discover</h2>
     <h4>Best Hidden Place</h4>
@@ -1664,6 +1661,7 @@
     </div>
 </div>
 
+<!-- Recommended Content -->
 <div class="container" id="our-town">
     <h2>Recommended</h2>
     <h4>Our most picked places</h4>
@@ -1731,6 +1729,7 @@
     </div>
 </div>
 
+<!-- Gallery Content -->
 <div class="container" id="my-gallery">
     <h2 class="justify-content-center">My Gallery</h2>
     <h4 class="justify-content-center">From Places I've Visit</h4>
@@ -1884,14 +1883,33 @@
     <div class="shadow"></div> -->
 </div>
 
+<footer class="footer">
+    <div class="footer-container d-flex justify-content-center">
+        <div class="footer-col">
+            <h4>About Developer </h4>
+            <p class="text-light fs-4">Developed by Gifari Asmara <br> Contact me at :</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/gifari-asmara-093843158/" target="_blank"><i class="fa-brands fa-linkedin fs-3"></i></a>
+                <a href="https://wa.me/qr/6JRV2BGMGSUZI1" target="_blank"><i class="fa-brands fa-whatsapp fs-3"></i></a>
+                <a href="https://www.instagram.com/gira_dl/" target="_blank"><i class="fa-brands fa-instagram fs-3"></i></a>
+                <a href="https://github.com/Giraken" target="_blank"><i class="fa-brands fa-github fs-3"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
 
+<div class="container-fluid d-flex justify-content-center py-4 my-4" id="copyright">
+    <p class="fs-3 text-light">© 2022 Company, Inc. All rights reserved.</p>
+</div>
 
+</div>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <script src="script.js"></script>
 <script src="gambar.js"></script>
-<script src="portrait-gallery.js"></script>
 <script type="text/javascript">
     var nav = document.querySelector('nav');
 
